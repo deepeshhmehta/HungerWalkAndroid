@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/profile_name_textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:mtf_image="@drawable/person"
+                app:mtf_labelColor="@color/black"
+                app:mtf_openKeyboardOnFocus="true">
+
+                <EditText
+                    android:id="@+id/profile_name_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/namelable"
+                    android:singleLine="true"
+                    android:text="Dutt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/profile_phone_textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_name_textlayout"
+                app:mtf_image="@drawable/phone"
+                app:mtf_labelColor="@color/black">
+
+                <EditText
+                    android:id="@+id/profile_phone_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phonenumberlable"
+                    android:text="4167283501"
+                    android:inputType="phone"
+                    android:textColor="@color/black" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/profile_email_textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_phone_textlayout"
+                app:mtf_image="@drawable/mail"
+                app:mtf_labelColor="@color/black">
+
+                <EditText
+                    android:id="@+id/profile_email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emaillable"
+                    android:singleLine="true"
+                    android:text="dutt@gmail.com"/>
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/profile_password_textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_email_textlayout"
+                app:mtf_image="@drawable/lock"
+                app:mtf_labelColor="@color/black">
+
+                <EditText
+                    android:id="@+id/profile_password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/passwordlable"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:text="duttpatel"/>
+
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <Button
+                android:id="@+id/profile_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/savelable"
+                android:theme="@style/login_btn_theme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_password_textlayout" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

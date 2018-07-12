@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.Signup2Activity">
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/maillogo" />
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/signup_email_textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:mtf_backgroundColor="@color/textColorWhite"
+            app:mtf_image="@drawable/mail"
+            app:mtf_labelColor="@color/textColorWhite"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/signup_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emaillable"
+                android:singleLine="true" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/signup_password_textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_email_textlayout"
+            app:mtf_backgroundColor="@color/textColorWhite"
+            app:mtf_image="@drawable/lock"
+            app:mtf_labelColor="@color/textColorWhite"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/signup_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwordlable"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/enteremaillable"
+            android:textColor="@color/textColorWhite"
+
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/signup_signup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="130dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/signuplable"
+            android:theme="@style/signup_btn_theme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_password_textlayout" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
+    </android.support.constraint.ConstraintLayout>

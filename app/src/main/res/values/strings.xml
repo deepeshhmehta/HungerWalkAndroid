@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Hungerwalk</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="histroy">History</string>
+    <string name="issue">Report Issue</string>
+    <string name="logout">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="login">Login/Sign Up</string>
+
+
+    <string name="emailHint">Email Address</string>
+    <string name="passwordHint">Password</string>
+
+
+    <string name="loingLable">Log in</string>
+    <string name="recoverLable">Recover Password?</string>
+    <string name="registerLable">Need an account?Sign Up</string>
+    <string name="namelable">Name</string>
+    <string name="phonenumberlable">Phone Number</string>
+    <string name="continulable">Continue </string>
+    <string name="signuplable">Signup</string>
+    <string name="emaillable">Email</string>
+    <string name="passwordlable">Password</string>
+    <string name="enternamelable">Enter your name and phone number</string>
+    <string name="enteremaillable">Enter your email and password</string>
+    <string name="issuelable">Write your comment</string>
+    <string name="submitlable">Submit</string>
+    <string name="savelable">Save</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
+

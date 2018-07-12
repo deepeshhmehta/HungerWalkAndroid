@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/login_logo_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/logo"
+            android:transitionName="logo_transition"/>
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/login_email_textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+
+            app:mtf_image="@drawable/mail"
+            app:mtf_labelColor="#666"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_backgroundColor="@color/hintColorText">
+
+            <EditText
+                android:id="@+id/login_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailHint"
+                android:singleLine="true" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/login_password_textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_email_textlayout"
+
+            app:mtf_image="@drawable/lock"
+            app:mtf_labelColor="#666"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_backgroundColor="@color/hintColorText">
+
+            <EditText
+                android:id="@+id/login_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwordHint"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/loingLable"
+        android:background="@color/colorPrimary"
+        android:theme="@style/buttonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/login_recover_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/recoverLable"
+        android:theme="@style/recoverpassword_btn_theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_btn" />
+
+    <Button
+        android:id="@+id/login_register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/registerLable"
+        android:theme="@style/register_btn_theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_recover_lable" />
+
+</android.support.constraint.ConstraintLayout>
